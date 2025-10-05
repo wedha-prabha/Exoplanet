@@ -12,4 +12,4 @@ shap
 tqdm
 seaborn
 captum
-astropyquantity
+astropy
