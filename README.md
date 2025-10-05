@@ -1,19 +1,11 @@
-# 🌌 A World Away — AI-Powered Exoplanet Detection
+# A World Away — Hunting for Exoplanets (demo)
 
-## Overview
-**A World Away** is an AI-powered exoplanet detection pipeline that combines a hybrid **CNN + Transformer model** with interactive **light curve visualization**. It analyzes light curve data from space telescopes like **Kepler** and **TESS**, predicting planetary transits and estimating key parameters such as period, depth, and duration.  
+This repository is a compact end-to-end demo of an exoplanet transit detection pipeline using synthetic light curves, a denoising autoencoder, and a hybrid CNN+Transformer model. It's designed to be runnable in one day to produce a working demo.
 
-The pipeline supports **multi-task learning**, enabling simultaneous classification (transit detection) and regression (planetary parameters). It also supports **synthetic and user-uploaded datasets**, enhancing model robustness and discovery potential.
+## Quickstart
 
----
-
-## Features
-- Hybrid **CNN + Transformer architecture** for accurate light curve analysis.  
-- **Multi-task learning:** simultaneous transit detection & parameter regression.  
-- **Interactive Streamlit dashboard** for visualization of light curves and predictions.  
-- Upload custom CSV/TXT flux data for instant analysis.  
-- Estimate **planet radius** using transit depth and star radius input.  
-- Supports **synthetic dataset generation** for testing.  
-- **Checkpoint support:** load a trained model (`best_model.pth`) for real predictions.
-
----
+1. Create virtual env and install:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
