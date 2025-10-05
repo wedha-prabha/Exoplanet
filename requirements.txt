@@ -13,3 +13,5 @@ tqdm
 seaborn
 captum
 astropy
+opencv-contrib-python
+opencv-python
